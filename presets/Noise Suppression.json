@@ -1,0 +1,52 @@
+{
+    "input": {
+        "blocklist": [],
+        "plugins_order": ["gate#0", "compressor#0", "limiter#0", "equalizer#0"],
+        "gate#0": {
+            "bypass": false, "input-gain": 0.0, "output-gain": 0.0,
+            "attack": 5.0, "release": 100.0,
+            "curve-threshold": -45.0, "curve-zone": 0.0,
+            "hysteresis": false, "hysteresis-threshold": 0.0, "hysteresis-zone": 0.0,
+            "reduction": -60.0, "makeup": 0.0, "stereo-split": false,
+            "hpf-mode": "12 dB/oct", "hpf-frequency": 100.0,
+            "lpf-mode": "off", "lpf-frequency": 20000.0, "dry": 0.0, "wet": 1.0,
+            "sidechain": {"type": "none", "mode": "RMS", "source": "", "stereo-split-source": "", "preamp": 0.0, "reactivity": 10.0, "lookahead": 2.0},
+            "input-to-sidechain": 0.0, "input-to-link": 0.0, "sidechain-to-input": 0.0, "sidechain-to-link": 0.0, "link-to-input": 0.0, "link-to-sidechain": 0.0
+        },
+        "compressor#0": {
+            "bypass": false, "input-gain": 3.0, "output-gain": 0.0,
+            "attack": 10.0, "release": 80.0, "release-threshold": -30.0,
+            "threshold": -24.0, "ratio": 3.0, "knee": 6.0, "makeup": 2.0,
+            "boost-threshold": 0.0, "boost-amount": 0.0, "stereo-split": false,
+            "mode": "RMS",
+            "hpf-mode": "off", "hpf-frequency": 80.0,
+            "lpf-mode": "off", "lpf-frequency": 20000.0, "dry": 0.0, "wet": 1.0,
+            "sidechain": {"type": "none", "mode": "RMS", "source": "", "stereo-split-source": "", "preamp": 0.0, "reactivity": 10.0, "lookahead": 2.0},
+            "input-to-sidechain": 0.0, "input-to-link": 0.0, "sidechain-to-input": 0.0, "sidechain-to-link": 0.0, "link-to-input": 0.0, "link-to-sidechain": 0.0
+        },
+        "limiter#0": {
+            "bypass": false, "input-gain": 0.0, "output-gain": 0.0,
+            "lookahead": 2.0, "attack": 2.0, "release": 50.0, "threshold": -3.0,
+            "sidechain-preamp": 0.0, "stereo-link": 100.0,
+            "alr": false, "alr-attack": 5.0, "alr-release": 50.0, "alr-knee": 6.0, "alr-knee-smooth": 3.0,
+            "gain-boost": 0.0,
+            "mode": "Soft", "oversampling": "None", "dithering": "None", "sidechain-type": "none",
+            "input-to-sidechain": 0.0, "input-to-link": 0.0, "sidechain-to-input": 0.0, "sidechain-to-link": 0.0, "link-to-input": 0.0, "link-to-sidechain": 0.0
+        },
+        "equalizer#0": {
+            "bypass": false, "input-gain": 0.0, "output-gain": 0.0,
+            "mode": "IIR", "num-bands": 15, "num-sliders": 31, "split-channels": false,
+            "balance": 0.0, "balance-frequency": 1000.0,
+            "band0": {"frequency": 80.0, "gain": -18.0, "mode": "RLC-BT", "slope": "x1", "type": "high-pass", "width": 0.71},
+            "band1": {"frequency": 200.0, "gain": -4.0, "mode": "RLC-BT", "slope": "x1", "type": "bell", "width": 0.71},
+            "band2": {"frequency": 500.0, "gain": 0.0, "mode": "RLC-BT", "slope": "x1", "type": "bell", "width": 0.71},
+            "band3": {"frequency": 1000.0, "gain": 2.0, "mode": "RLC-BT", "slope": "x1", "type": "bell", "width": 0.71},
+            "band4": {"frequency": 2000.0, "gain": 3.0, "mode": "RLC-BT", "slope": "x1", "type": "bell", "width": 0.71},
+            "band5": {"frequency": 3000.0, "gain": 4.0, "mode": "RLC-BT", "slope": "x1", "type": "bell", "width": 0.71},
+            "band6": {"frequency": 4000.0, "gain": 2.0, "mode": "RLC-BT", "slope": "x1", "type": "bell", "width": 0.71},
+            "band7": {"frequency": 6000.0, "gain": -4.0, "mode": "RLC-BT", "slope": "x1", "type": "bell", "width": 0.71},
+            "band8": {"frequency": 8000.0, "gain": -6.0, "mode": "RLC-BT", "slope": "x1", "type": "bell", "width": 0.71},
+            "band9-to-band14": {"bypass": true}
+        }
+    }
+}
